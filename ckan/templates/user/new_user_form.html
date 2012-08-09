@@ -19,7 +19,7 @@
   <label for="name" class="control-label">Login</label>
   <div class="controls">
     <input type="text" name="name" value="${data.get('name','')}" />
-    <p>3+ chars, using only 'a-z0-9' and '-_'</p>
+    <p>2+ chars, using only 'a-z0-9' and '-_'</p>
     <p class="field_error" py:if="errors.get('name', '')">${errors.get('name', '')}</p>
   </div>
 </div>

@@ -216,7 +216,7 @@ def name_validator(val, context):
         raise Invalid(_('Name must be a maximum of %i characters long') % \
                       PACKAGE_NAME_MAX_LENGTH)
     if not name_match.match(val):
-        raise Invalid(_('Url must be purely lowercase alphanumeric '
+        raise Invalid(_('Name must be purely lowercase alphanumeric '
                         '(ascii) characters and these symbols: -_'))
     return val
 
