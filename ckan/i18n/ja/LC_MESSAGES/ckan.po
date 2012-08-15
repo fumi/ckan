@@ -1595,22 +1595,29 @@ msgstr "プレビュー"
 #: ckanext/organizations/templates/organization_package_form.html:93
 #: ckanext/publisher_form/templates/dataset_form.html:90
 #: ckanext/publisher_form/templates/publisher_form.html:42
-msgid "You can use"
-msgstr "入力可能な"
+#msgid "You can use"
+#msgstr "使用できます"
 
 #: ckan/templates/_util.html:18
 #: ckanext/organizations/templates/organization_package_form.html:93
 #: ckanext/publisher_form/templates/dataset_form.html:90
 #: ckanext/publisher_form/templates/publisher_form.html:42
-msgid "Markdown formatting"
-msgstr "Markdown フォーマット"
+#msgid "Markdown formatting"
+#msgstr "Markdown フォーマット"
 
 #: ckan/templates/_util.html:18
 #: ckanext/organizations/templates/organization_package_form.html:93
 #: ckanext/publisher_form/templates/dataset_form.html:90
 #: ckanext/publisher_form/templates/publisher_form.html:42
-msgid "here."
-msgstr "に記載があります"
+#msgid "here."
+#msgstr "ここ。"
+
+#: ckan/templates/_util.html:18
+#: ckanext/organizations/templates/organization_package_form.html:93
+#: ckanext/publisher_form/templates/dataset_form.html:90
+#: ckanext/publisher_form/templates/publisher_form.html:42
+msgid "You can use [1:Markdown formatting] here."
+msgstr "ここでは[1:Markdown フォーマット]が使えます。"
 
 #: ckan/templates/_util.html:69 ckan/templates/_util.html:82
 #: ckanext/stats/templates/ckanext/stats/index.html:82
