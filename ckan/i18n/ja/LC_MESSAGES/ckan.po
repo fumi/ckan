@@ -2720,12 +2720,8 @@ msgid "Who else is here?"
 msgstr "ここで提供されているデータ例"
 
 #: ckan/templates/home/index.html:75
-msgid "has"
-msgstr "has"
-
-#: ckan/templates/home/index.html:75
-msgid "datasets."
-msgstr "データセット"
+msgid "%(title)s has %(packages)s datasets."
+msgstr "%(title)s には %(packages)s 個のデータセットがあります。"
 
 #: ckan/templates/package/comments.html:5
 #: ckan/templates/package/history.html:6
