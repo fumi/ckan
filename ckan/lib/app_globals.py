@@ -16,13 +16,13 @@ class Globals(object):
         'app_globals' variable
 
         """
-        self.site_title = config.get('ckan.site_title', '')
+        self.site_title = config.get('ckan.site_title', '').decode("utf-8")
         self.favicon = config.get('ckan.favicon',
                                   '/images/icons/ckan.ico')
         self.site_logo = config.get('ckan.site_logo', '')
         self.site_url = config.get('ckan.site_url', '')
         self.site_url_nice = self.site_url.replace('http://','').replace('www.','')
-        self.site_description = config.get('ckan.site_description', '')
+        self.site_description = config.get('ckan.site_description', '').decode("utf-8")
         self.site_about = config.get('ckan.site_about', '')
         
         self.facets = config.get('search.facets', 'groups tags res_format license').split()
