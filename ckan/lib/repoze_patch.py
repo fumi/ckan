@@ -145,13 +145,14 @@ def challenge(self, environ, status, app_headers, forget_headers):
     """
     request = Request(environ)
     logger = environ['repoze.who.logger']
+    path = environ['PATH_INFO']
 
     # check for the field present, if not redirect to login_form
     if not request.params.has_key(self.openid_field):
         # redirect to login_form
         res = Response()
         res.status = 302
-        res.location = get_full_path(self.login_form_url, environ)+"?%s=%s" %(self.came_from_field, request.url)
+        res.location = get_full_path(path + self.login_form_url, environ)+"?%s=%s" %(self.came_from_field, request.url)
         return res
 
     # now we have an openid from the user in the request
