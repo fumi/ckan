@@ -9,7 +9,7 @@
 
 <${ h.url_for(controller='package',action='read',id=c.pkg_dict['name'], qualified=True)}>
 a dcat:Dataset;
-     dct:description "${c.pkg_dict['notes']}";
+     dct:description """${c.pkg_dict['notes']}""";
 {% for tag_dict in c.pkg_dict['tags'] %}\
      dct:keyword "${tag_dict['name']}";
 {% end %}\
