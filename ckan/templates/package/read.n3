@@ -8,7 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <${ h.url_for(controller='package',action='read',id=c.pkg_dict['name'], qualified=True)}>
-a dcat:Dataset;
+     a dcat:Dataset;
      dct:description """${c.pkg_dict['notes']}""";
 {% for tag_dict in c.pkg_dict['tags'] %}\
      dct:keyword "${tag_dict['name']}";
@@ -54,5 +54,5 @@ a dcat:Dataset;
 {% end %}\
      dct:title "${c.pkg_dict['title']}";
      :label "${c.pkg_dict['name']}";
-     = <urn:uuid:${c.pkg_dict['id']}>;
+     owl:sameAs <urn:uuid:${c.pkg_dict['id']}>;
      foaf:homepage <${ h.url_for(controller='package',action='read',id=c.pkg_dict['name'], qualified=True)}> .
